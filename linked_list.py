@@ -32,7 +32,7 @@ M4BlockChain.append(create_genesis_block())
 # write a function `next_block` to generate a block
 def next_block(last_block):
     index = last_block.index
-    prev_hash = last_block.previous_hash
+    prev_hash = last_block.hash
     return Block(index + 1, datetime.now(), "this is block {}".format(index + 1), "{}".format(prev_hash))
 
 # append 5 blocks to the blockchain
