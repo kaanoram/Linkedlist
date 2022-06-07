@@ -40,5 +40,5 @@ def next_block(last_block):
 
 def app_five(block_list):
     for _ in range(5):
-        last_block = M4BlockChain[-1]
-        M4BlockChain.append(next_block(last_block))
+        last_block = block_list[-1]
+        block_list.append(next_block(last_block))
